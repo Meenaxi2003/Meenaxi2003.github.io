@@ -1,83 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meenakshi Rajesh | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            color: #333;
-        }
+<title>Meenakshi Rajesh | Biomedical Engineer</title>
 
-        header {
-            background: linear-gradient(135deg, #4CAF50, #2E7D32);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
-        nav {
-            background: #222;
-            padding: 10px;
-            text-align: center;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+}
 
-        nav a:hover {
-            color: #4CAF50;
-        }
+/* PROFILE IMAGE */
+header img {
+    width: 130px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 0 20px #38bdf8;
+    animation: float 3s infinite ease-in-out;
+}
 
-        section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+/* TYPING TEXT */
+.typing {
+    color: #38bdf8;
+    font-weight: 600;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #222;
-            color: white;
-        }
+/* NAV */
+nav {
+    background: #020617;
+    text-align: center;
+    padding: 10px;
+}
 
-        button {
-            background: #4CAF50;
-            border: none;
-            padding: 10px 20px;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
 
-        button:hover {
-            background: #388E3C;
-        }
-    </style>
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CARD */
+.card {
+    background: #020617;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(56,189,248,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* PROJECT IMAGE */
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* BUTTON */
+button {
+    background: #38bdf8;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+</style>
 </head>
 
 <body>
 
 <header>
+    <img src="https://via.placeholder.com/150">
     <h1>Meenakshi Rajesh</h1>
-    <p>MTech in Biomedical Engineering Student</p>
+    <h3>I am a <span class="typing"></span></h3>
 </header>
 
 <nav>
@@ -87,44 +126,122 @@
 </nav>
 
 <section id="about">
-    <div class="card">
-        <h2>About Me</h2>
-        <p></p> I am a final-year M.Tech student specializing in Biomedical Engineering with a strong interest in medical technology, artificial intelligence, and healthcare innovation. I am passionate about applying engineering principles to develop solutions that improve patient care and address real-world healthcare challenges.
-
-Throughout my academic journey, I have worked on projects involving biomedical signal processing, medical imaging, machine learning, and healthcare technologies. These experiences have strengthened my analytical thinking, problem-solving abilities, and technical skills while reinforcing the importance of interdisciplinary collaboration.
-
-I am eager to contribute to research and industry by developing innovative, data-driven healthcare solutions. As a lifelong learner, I continuously explore emerging technologies and seek opportunities to expand my knowledge, take on challenging projects, and create meaningful impact in the field of biomedical engineering.
-
-        </p>
-    </div>
+<div class="card">
+<h2>About Me</h2>
+<p>
+I am a final-year M.Tech student specializing in Biomedical Engineering with a strong interest in medical technology, artificial intelligence, and healthcare innovation. I am passionate about applying engineering principles to develop solutions that improve patient care and address real-world healthcare challenges. Throughout my academic journey, I have worked on projects involving biomedical signal processing, medical imaging, machine learning, and healthcare technologies. These experiences have strengthened my analytical thinking, problem-solving abilities, and technical skills while reinforcing the importance of interdisciplinary collaboration. I am eager to contribute to research and industry by developing innovative, data-driven healthcare solutions. As a lifelong learner, I continuously explore emerging technologies and seek opportunities to expand my knowledge, take on challenging projects, and create meaningful impact in the field of biomedical engineering.
+</p>
+</div>
 </section>
 
 <section id="projects">
-    <div class="card">
-        <h2>Projects</h2>
-        <ul>
-            <li>Development of Reflective PPG Based hardware system for dynamic microvascular reactivity assessment</li>
-            <li>Analysis of EEG signal complexity using Entropy during cognitive tasks</li>
-            <li>Mathematical modelling of drug concentration in blood using ordinary differential equations</li>
-            <li>Physiological mathematical modelling of cardiac output during exercise</li>
-            <li>Simulation and signal processing of respiratory patterns for accurate respiratory rate estimation in MatLab</li>
-            <li>Neosecure AI:Innovating care from the first beat</li>
-            <li>Neurosift:Decoding alzheimers stages</li>
-        </ul>
-    </div>
+
+<section id="projects">
+
+<div class="card project">
+<h2>Reflective PPG Microvascular Analysis</h2>
+<p>
+Development of a hardware-based system using PPG signals to analyze dynamic microvascular reactivity in real-time.
+</p>
+<img src="https://via.placeholder.com/600x300">
+</div>
+
+<div class="card project">
+<h2>EEG Signal Complexity Analysis</h2>
+<p>
+Analyzed EEG signals using entropy-based methods to study brain activity during cognitive tasks.
+</p>
+<img src="https://via.placeholder.com/600x300">
+</div>
+
+<div class="card project">
+<h2>Drug Concentration Modelling</h2>
+<p>
+Mathematical modelling of drug kinetics in blood using Ordinary Differential Equations (ODEs).
+</p>
+<img src="https://via.placeholder.com/600x300">
+</div>
+
+<div class="card project">
+<h2>Cardiac Output Modelling</h2>
+<p>
+Developed physiological models to analyze variation in cardiac output during physical exercise.
+</p>
+<img src="https://via.placeholder.com/600x300">
+</div>
+
+<div class="card project">
+<h2>Respiratory Signal Processing</h2>
+<p>
+Simulation and analysis of respiratory patterns using MATLAB for accurate respiratory rate estimation.
+</p>
+<img src="https://via.placeholder.com/600x300">
+</div>
+
+<div class="card project">
+<h2>Neosecure AI</h2>
+<p>
+AI-based neonatal care system focusing on early detection and monitoring from birth.
+</p>
+<img src="https://via.placeholder.com/600x300">
+</div>
+
+<div class="card project">
+<h2>Neurosift</h2>
+<p>
+Machine learning-based system to classify and decode stages of Alzheimer’s disease.
+</p>
+<img src="https://via.placeholder.com/600x300">
+</div>
+
+</section>
+<img src="https://via.placeholder.com/600x300">
+</div>
+
 </section>
 
 <section id="contact">
-    <div class="card">
-        <h2>Contact</h2>
-        <p>Email: meenakshirajesh710@gmail.com</p>
-        <button onclick="alert('Thanks for visiting!')">Say Hello</button>
-    </div>
+<div class="card">
+<h2>Contact</h2>
+<p>Email: meenakshirajesh710@gmail.com</p>
+<button onclick="alert('Thanks for visiting!')">Say Hello</button>
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Meenakshi Rajesh</p>
+<p>© 2026 Meenakshi Rajesh</p>
 </footer>
+
+<!-- TYPING EFFECT -->
+<script>
+const texts = ["Biomedical Engineer", "AI in Healthcare", "Signal Processing Enthusiast"];
+let i=0, j=0, current="", isDeleting=false;
+
+function type(){
+    current = texts[i];
+    document.querySelector(".typing").textContent = current.substring(0,j);
+
+    if(!isDeleting && j<current.length){
+        j++;
+    } else if(isDeleting && j>0){
+        j--;
+    }
+
+    if(j==current.length){
+        isDeleting=true;
+        setTimeout(type,1000);
+        return;
+    }
+
+    if(j==0){
+        isDeleting=false;
+        i=(i+1)%texts.length;
+    }
+
+    setTimeout(type, isDeleting?50:100);
+}
+type();
+</script>
 
 </body>
 </html>
