@@ -1,35 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meenakshi Rajesh | Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+        button {
+            background: #4CAF50;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #388E3C;
+        }
+    </style>
 </head>
-<body style="font-family: Arial; margin: 40px;">
 
+<body>
+
+<header>
     <h1>Meenakshi Rajesh</h1>
-    <h2>M.Tech Biomedical Engineering Student</h2>
+    <p>MTech in Biomedical Engineering Student</p>
+</header>
 
-    <hr>
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <h3>About Me</h3>
-    <p>
-    I am a passionate Biomedical Engineering student interested in 
-    medical devices and Artificial Intelligence applications in healthcare.
-    </p>
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p></p> I am a final-year M.Tech student specializing in Biomedical Engineering with a strong interest in medical technology, artificial intelligence, and healthcare innovation. I am passionate about applying engineering principles to develop solutions that improve patient care and address real-world healthcare challenges.
 
-    <h3>Projects</h3>
-    <h4>Real-Time Microvascular Analysis using PPG</h4>
-    <ul>
-        <li>Developed using Arduino Uno and MAX30102 sensor</li>
-        <li>Applied signal filtering and feature extraction</li>
-        <li>Used Random Forest model for classification</li>
-        <li>Generated vascular health score</li>
-    </ul>
+Throughout my academic journey, I have worked on projects involving biomedical signal processing, medical imaging, machine learning, and healthcare technologies. These experiences have strengthened my analytical thinking, problem-solving abilities, and technical skills while reinforcing the importance of interdisciplinary collaboration.
 
-    <h3>Skills</h3>
-    <p>Python | Machine Learning | Signal Processing | Arduino</p>
+I am eager to contribute to research and industry by developing innovative, data-driven healthcare solutions. As a lifelong learner, I continuously explore emerging technologies and seek opportunities to expand my knowledge, take on challenging projects, and create meaningful impact in the field of biomedical engineering.
 
-    <h3>Contact</h3>
-    <p>Email: yourmail@gmail.com</p>
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li>Development of Reflective PPG Based hardware system for dynamic microvascular reactivity assessment</li>
+            <li>Analysis of EEG signal complexity using Entropy during cognitive tasks</li>
+            <li>Mathematical modelling of drug concentration in blood using ordinary differential equations</li>
+            <li>Physiological mathematical modelling of cardiac output during exercise</li>
+            <li>Simulation and signal processing of respiratory patterns for accurate respiratory rate estimation in MatLab</li>
+            <li>Neosecure AI:Innovating care from the first beat</li>
+            <li>Neurosift:Decoding alzheimers stages</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: meenakshirajesh710@gmail.com</p>
+        <button onclick="alert('Thanks for visiting!')">Say Hello</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Meenakshi Rajesh</p>
+</footer>
 
 </body>
 </html>
