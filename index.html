@@ -9,11 +9,57 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding-left: 30px;
+    border-left: 3px solid #ffb6c1;
+    max-width: 800px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background: #ff69b4;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff69b4;
+}
+
+.timeline-content {
     background: #fff0f5;
-    color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,105,180,0.2);
+    color: #333;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    color: #ff1493;
+}
+
+.timeline-content h4 {
+    margin: 5px 0;
+    color: #555;
+}
+
+.timeline-content span {
+    font-size: 13px;
+    color: #ff69b4;
+    font-weight: 600;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
 }
 
 /* HEADER */
@@ -124,6 +170,25 @@ I am a final-year M.Tech student specializing in Biomedical Engineering with a s
 </p>
 </div>
 </section>
+<section id="education">
+<div class="card">
+<h2>🎓 Education</h2>
+
+<p><b>Master of Technology (M.Tech) in Biomedical Engineering</b><br>
+NSS College of Engineering, Palakkad</p>
+
+<br>
+
+<p><b>Bachelor of Technology (B.Tech) in Biomedical Engineering</b><br>
+Musaliar College of Engineering,Chirayinkeezhu,Thiruvananthapuram</p>
+
+<br>
+
+<p><b>Class XII (CBSE - Maths Biology)</b><br>
+Alan Feldman Public School, Kazhakuttom, Thiruvananthapuram</p>
+
+</div>
+</section>
 
 <section id="projects">
 
@@ -169,6 +234,49 @@ I am a final-year M.Tech student specializing in Biomedical Engineering with a s
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_6xkjRWNVam-tBbCe-OBJQiM_7RqEY7YQw7oNaCzp-pjwI4BNaslkzcg&s=10">
 </div>
 
+</section>
+<section id="internships">
+<h2 style="text-align:center;">💼 Internships</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<h3>Biomedical Engineer Intern</h3>
+<h4>NIMS Medicity</h4>
+<span>📅 July 2024 • 1 Month</span>
+<p>
+Worked as part of B.Tech curriculum, gaining exposure to hospital biomedical equipment maintenance, calibration and clinical environment.
+</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<h3>Biomedical Engineer Trainee</h3>
+<h4>NIMS Medicity</h4>
+<span>📅 April – June 2025 • 2 Months</span>
+<p>
+Hands-on training in biomedical device handling, maintenance, and hospital operations, document handling, calibration of devices and clinical inspections.
+</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<h3>Biomedical Engineer Intern</h3>
+<h4>HINDLABS, HLL Lifecare Limited</h4>
+<span>📅 2 Months</span>
+<p>
+Experience in diagnostics, laboratory equipments, and healthcare technology management. Familiarised with real world scenarios of equipment handling and maintenance.
+</p>
+</div>
+</div>
+
+</div>
 </section>
 
 <section id="contact">
